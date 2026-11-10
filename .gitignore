@@ -1,0 +1,33 @@
+
+# Variáveis de ambiente e chaves de API
+.env
+.env.*
+!.env.example
+
+# Ambientes virtuais Python
+venv/
+.venv/
+env/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Arquivos de log
+*.log
+
+# Configurações locais de IDE
+.vscode/
+.idea/
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+*.tmp
+*.bak
