@@ -40,16 +40,15 @@ O [projeto](./Marketing/app.py) foi construído a partir de um estudo de caso de
 
 ### Como Executar
 
+Crie um arquivo `.env` na raiz do projeto com a sua chave:
+```
+GROQ_API_KEY=sua_chave_aqui
+```
+
 ```bash
 pip install -r requirements.txt
 
 cd Marketing
-```
-
-Crie um arquivo `.env` na pasta do agente com a sua chave (veja o `.env.example`):
-
-```
-GROQ_API_KEY=sua_chave_aqui
 ```
 
 ```bash
@@ -86,12 +85,6 @@ O [projeto](./Suporte%20e%20Atendimento/app.py) automatiza o suporte, reduz a so
 
 ### Como Executar
 
-```bash
-pip install -r requirements.txt
-
-cd "Suporte e Atendimento"
-```
-
 Coloque os PDFs que servirão de base de conhecimento na pasta `docs/` e crie um arquivo `.env` com a sua chave (veja o `.env.example`):
 
 ```
@@ -99,7 +92,14 @@ GROQ_API_KEY=sua_chave_aqui
 ```
 
 ```bash
-streamlit run app02.py
+pip install -r requirements.txt
+
+cd "Suporte e Atendimento"
 ```
+
+```bash
+streamlit run app.py
+```
+
 
 > Na primeira execução, o modelo de embeddings é baixado (cerca de 2 GB) e os PDFs são indexados, então a primeira resposta pode demorar. O índice é salvo na pasta `index_faiss/`.
